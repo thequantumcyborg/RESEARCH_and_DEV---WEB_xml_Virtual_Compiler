@@ -1,0 +1,191 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>UMC Info Desk</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="@{'/public/stylesheets/bootstrap.min.css'}" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="@{'/public/stylesheets/carousel.css'}" rel="stylesheet">
+  <style id="holderjs-style" type="text/css"></style></head>
+<!-- NAVBAR
+================================================== -->
+  <body style="" onload="loadLists();">
+    <div class="navbar-wrapper">
+      <div class="container">
+
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">University of Minnesota-Crookston</a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="/">InfoDesk</a></li>
+                <li ><a href="#">About</a></li>
+                <li ><a href="#">Contact</a></li>
+                <li><a href="#">Hours</a></li>
+                <li><a href="/magazine">Magazine</a></li>
+                
+            
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img data-src="holder.js/900x500/auto/#777:#7a7a7a/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojN2E3YTdhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
+          <img src="@{'/public/images/fall2.png'}" alt="fall">
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNmE2YTZhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+U2Vjb25kIHNsaWRlPC90ZXh0Pjwvc3ZnPg==">
+          <img src="@{'/public/images/winter.png'}" alt="winter">
+          
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzU1NSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNWE1YTVhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+VGhpcmQgc2xpZGU8L3RleHQ+PC9zdmc+">
+          <img src="@{'/public/images/summer.png'}" alt="summer">
+
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+  <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          
+          <h2>Fall</h2>
+          <p>Fall items checkout quickly! Reserve Ahead.</p>
+        
+               <a href="/fall" class="btn btn-default" >View Gallery »</a>
+  
+				
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Winter</h2>
+          <p>Enjoy skiing, ice fishing and more!</p>
+          <a href="/winter" class="btn btn-default" >View Gallery »</a>
+		  
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <h2>Summer</h2>
+          <p>New arrivals available, be the first to checkout! </p>
+          <a href="/summer" class="btn btn-default" >View Gallery »</a>
+		 
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+					<div class="modal-content">
+                                           
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel"> <span class="glyphicon glyphicon-user"></span> Admin</h4>
+						                                                        
+                                            </div>
+					  <div class="modal-body">
+						<form  action="/signin" method="POST" class="form-horizontal" role="form">
+                                                    <div class="form-group">
+                                                      <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+                                                      <div class="col-sm-10">
+                                                        <input type="text" class="form-control" id="inputEmail3" placeholder="Username" name ="onlineID" value="${onlineID}" required>
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                                                      <div class="col-sm-10">
+                                                          
+                                                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name ="passcode" value="${passcode}" required>
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <div class="col-sm-offset-2 col-sm-10">
+                                                        <div class="checkbox">
+                                                          <label>
+                                                            <input type="checkbox"> Remember me
+                                                          </label>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                      <div class="col-sm-offset-2 col-sm-10">
+                                                        <button type="submit" class="btn btn-default">Sign in</button>
+                                                           
+                                                      </div>
+                                                    </div>
+                                                 </form> 
+					  </div>
+					 
+                                        
+					</div>
+				  </div>
+				</div>  
+ 
+
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a data-toggle="modal" href="#signin"><span class="glyphicon glyphicon-user"></span>  Admin</a></p>
+        <p>© 2014 University of Minnesota-Crookston. InfoDesk · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster 
+      
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="@{'/public/javascripts/bootstrap.min.js'}" ></script>
+   
+  
+
+</body></html>
+
